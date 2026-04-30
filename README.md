@@ -1,12 +1,71 @@
-# React + Vite
+# Todo-list
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Todo-list is a simple and responsive task management app built with React, Vite, and Tailwind CSS. It allows users to add, edit, delete, and mark tasks as completed, while storing the task list in local storage so the data stays available after refresh.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Live Site](https://todo-list-nu-livid-33.vercel.app/)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Add new tasks
+- Edit existing tasks
+- Delete tasks
+- Mark tasks as completed
+- Persist tasks in local storage
+- Simple and clean interface
+- Unique task IDs using UUID
+- Built with a lightweight Vite setup
+
+## Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- UUID
+- JavaScript
+
+## Project Structure
+
+```bash
+src/
+  components/
+    Navbar.jsx
+  App.jsx
+  App.css
+  index.css
+  main.jsx
+
+How It Works
+Users type a task into the input field and add it to the list
+Each todo item is stored with:
+id
+todo
+isCompleted
+Tasks are saved in browser local storage
+On page load, the app reads existing tasks from local storage and restores them
+Users can toggle completion, edit a task, or delete it from the list
+
+Installation
+git clone https://github.com/sadgi41/Todo-list.git
+cd Todo-list
+npm install
+npm run dev
+
+Available Scripts
+npm run dev
+npm run build
+npm run preview
+npm run lint
+
+Future Improvements
+Add task filters such as All, Active, and Completed
+Add due dates or priorities
+Improve mobile layout and accessibility
+Add confirmation before deleting tasks
+Add drag-and-drop task ordering
+
+Author
+Sadgi Jain
+
+GitHub: sadgi41
